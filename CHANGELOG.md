@@ -1,3 +1,15 @@
+## 1.0.0 (2023-08-07)
+
+
+### Features
+
+* add front page ([02121c3](https://github.com/PaoloPenazzi/WS-assignment-2/commit/02121c3497ca64779715efee681d47b8b32f7025))
+
+
+### Documentation
+
+* add introduction ([8eb6602](https://github.com/PaoloPenazzi/WS-assignment-2/commit/8eb66023bf847a4b491a724c5ec14d35d7a38bc5))
+
 ## [0.2.0](https://github.com/FilippoVissani/latex-template/compare/0.1.2+2023-03-14-16-45...0.2.0) (2023-04-04)
 
 
