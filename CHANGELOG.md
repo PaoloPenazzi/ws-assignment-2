@@ -1,3 +1,10 @@
+## [1.1.0](https://github.com/PaoloPenazzi/WS-assignment-2/compare/1.0.0...1.1.0) (2023-08-09)
+
+
+### Features
+
+* add BDTOnto Taxonomy ([28785e3](https://github.com/PaoloPenazzi/WS-assignment-2/commit/28785e399dcc83a456b22915655698673e6b9907))
+
 ## 1.0.0 (2023-08-07)
 
 
