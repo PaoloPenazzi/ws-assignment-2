@@ -1,3 +1,10 @@
+## [1.2.0](https://github.com/PaoloPenazzi/WS-assignment-2/compare/1.1.0...1.2.0) (2023-08-09)
+
+
+### Features
+
+* add relationship between classes ([9bcd2db](https://github.com/PaoloPenazzi/WS-assignment-2/commit/9bcd2db698cfc91ce9f259dd12c90ef702feb06f))
+
 ## [1.1.0](https://github.com/PaoloPenazzi/WS-assignment-2/compare/1.0.0...1.1.0) (2023-08-09)
 
 
