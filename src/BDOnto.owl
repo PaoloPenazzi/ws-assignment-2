@@ -1,0 +1,639 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#"
+     xml:base="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/7/untitled-ontology-11#directlyPrecededBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/7/untitled-ontology-11#directlyPrecededBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#directlyFollowedBy"/>
+        <rdfs:comment xml:lang="en">This property establishes which step comes before.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/7/untitled-ontology-11#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/7/untitled-ontology-11#isPartOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasPart"/>
+        <rdfs:comment xml:lang="en">This property links a more specific class to a more general class. For example, it connects a specific class as &quot;Data_Analysis&quot; to &quot;Data_Cleaning&quot; to indicate that it is an integral part of that general phase.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#directlyFollowedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#directlyFollowedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasCompatibleTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasCompatibleTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasLicense -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasLicense">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#isLicensedBy"/>
+        <rdfs:comment xml:lang="en">This property indicates the type of licence associated with that technology or instrument.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasPart -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasPart">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#isCompatibleWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#isCompatibleWith">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment xml:lang="en">Indicates the compatibility between two systems.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#isLicensedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#isLicensedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#isUsedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#isUsedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#usesTechnology"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#supportedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#supportedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#supportsWith"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#supportsWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#supportsWith">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment xml:lang="en">A specific tool or technology or whatever, supports something else like a specific programming language.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#usesTechnology -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#usesTechnology">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment xml:lang="en">Defines which technologies is used by some other artifact.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasAverageSize -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasAverageSize">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasCost -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasCost">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasDifficultyLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasDifficultyLevel">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasFinishDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasFinishDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasFullName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasFullName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasLearningCurve -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasLearningCurve">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasStartingDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasStartingDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasTrainingRequirements -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasTrainingRequirements">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasURL -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasURL">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasVersion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasVersion">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Batch_Processing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Batch_Processing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Processing"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Stream_Processing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Classification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Classification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Operation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Clustering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Clustering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Operation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Analysis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Analysis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#General_Steps"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Cleaning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Cleaning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Operation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Collecting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Collecting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Operation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Compliance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Compliance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Governance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Exploration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Exploration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Operation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Formatting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Formatting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Operation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Gathering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Gathering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Operation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Governance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Governance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Operation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Integration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Integration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Operation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Preparation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Preparation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#General_Steps"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Privacy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Privacy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Governance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Processing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Processing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Operation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Provision -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Provision">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#General_Steps"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Quality_Verification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Quality_Verification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Operation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Science_Process -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Science_Process">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Information_Content_Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Security -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Security">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Governance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Selection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Selection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Operation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Visualization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Visualization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#General_Steps"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Deployment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Deployment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Operation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Domain_Specific_Language -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Domain_Specific_Language">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Programming_Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Evaluation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Evaluation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Operation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Functional_Language -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Functional_Language">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Programming_Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#General_Steps -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#General_Steps">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Science_Process"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Operation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Hardware -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Hardware">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Technology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Information_Content_Entity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Information_Content_Entity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#License -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#License">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Information_Content_Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Logic_Language -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Logic_Language">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Programming_Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Modelling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Modelling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Operation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Object_Oriented_Language -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Object_Oriented_Language">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Programming_Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Operation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Operation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Science_Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Plotting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Plotting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Operation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Programming_Language -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Programming_Language">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Information_Content_Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Regression -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Regression">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Operation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Reporting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Reporting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Operation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Technology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Stream_Processing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Stream_Processing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Processing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Technology -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Technology">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Information_Content_Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Tool -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Tool">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Technology"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Classification"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Clustering"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Cleaning"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Collecting"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Exploration"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Formatting"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Gathering"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Governance"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Integration"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Processing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Quality_Verification"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Selection"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Deployment"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Evaluation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Modelling"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Plotting"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Regression"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Reporting"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Analysis"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Preparation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Provision"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Visualization"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Compliance"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Privacy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Security"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Domain_Specific_Language"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Functional_Language"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Logic_Language"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Object_Oriented_Language"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Hardware"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Service"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Tool"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#License"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Programming_Language"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Technology"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
