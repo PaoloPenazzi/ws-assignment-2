@@ -1,3 +1,11 @@
+## [1.3.0](https://github.com/PaoloPenazzi/ws-assignment-2/compare/1.2.0...1.3.0) (2023-10-24)
+
+
+### Features
+
+* update onto ([33f3fbb](https://github.com/PaoloPenazzi/ws-assignment-2/commit/33f3fbb1e5ef3297fcc3225e03fa0bbac973b16f))
+* update onto ([e469bb8](https://github.com/PaoloPenazzi/ws-assignment-2/commit/e469bb88dcd70b5ca459e7c2a7aafc777f57da96))
+
 ## [1.2.0](https://github.com/PaoloPenazzi/WS-assignment-2/compare/1.1.0...1.2.0) (2023-08-09)
 
 
