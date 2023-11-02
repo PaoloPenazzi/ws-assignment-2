@@ -38,6 +38,7 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/7/untitled-ontology-11#directlyPrecededBy">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#directlyFollowedBy"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#General_Steps"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#General_Steps"/>
@@ -63,6 +64,7 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#directlyFollowedBy">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#General_Steps"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#General_Steps"/>
         <rdfs:comment xml:lang="en">Establish which steps comes after this step.</rdfs:comment>
@@ -107,7 +109,7 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#isLicensedBy"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Big_Data_Tool"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdfs:comment xml:lang="en">This property indicates the type of licence associated with that technology or instrument.</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -168,6 +170,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#isLicensedBy">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdfs:comment xml:lang="en">Inverse of &apos;hasLicense&apos;.</rdfs:comment>
     </owl:ObjectProperty>
@@ -245,7 +248,8 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/platformOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Big_Data_Technology"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Big_Data_Service"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/11/untitled-ontology-24#Company"/>
         <rdfs:comment xml:lang="en">The company that controls a specific technology.</rdfs:comment>
     </owl:ObjectProperty>
@@ -256,9 +260,10 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/platformOf">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/11/untitled-ontology-24#Company"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Big_Data_Technology"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Big_Data_Service"/>
         <rdfs:comment>Inverse of &apos;hasPlatform&apos;</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -439,14 +444,14 @@
                         <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/11/untitled-ontology-24#Company"/>
                     </owl:Restriction>
                     <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasAverageCost"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasDifficultyLevel"/>
                         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                         <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasEndOfSupportDate"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasLearningCurve"/>
@@ -1585,34 +1590,49 @@ These servers are optimized for performance, availability, and data security and
     
 
 
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Amazon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Amazon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/11/untitled-ontology-24#Company"/>
+        <untitled-ontology-24:companyName>Amazon</untitled-ontology-24:companyName>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Amazon_AWS -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Amazon_AWS">
         <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Big_Data_Technology"/>
-        <supportsWith rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Hadoop_V2.2.0"/>
-        <untitled-ontology-36:hasPlatform rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/11/untitled-ontology-24#Intel"/>
+        <supportsWith rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Hadoop_V2.2.2"/>
+        <untitled-ontology-36:hasPlatform rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Amazon"/>
+        <hasAverageCost rdf:datatype="http://www.w3.org/2001/XMLSchema#float">43.7</hasAverageCost>
         <hasDifficultyLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasDifficultyLevel>
-        <hasEndOfSupportDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-27T14:30:00Z</hasEndOfSupportDate>
         <hasLearningCurve rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasLearningCurve>
-        <hasVersion>1.3</hasVersion>
+        <hasVersion>1.4.8</hasVersion>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Azure -->
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Cassandra_V1.3.2 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Azure">
-        <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Big_Data_Service"/>
-        <untitled-ontology-36:hasPlatform rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/11/untitled-ontology-24#Microsoft"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Cassandra_V1.3.2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Big_Data_Technology"/>
+        <hasLicense rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/LicenseOpen"/>
+        <supportsWith rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/SQL"/>
+        <hasAverageSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.6</hasAverageSize>
+        <hasDifficultyLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</hasDifficultyLevel>
+        <hasEndOfSupportDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-10-24T14:00:00Z</hasEndOfSupportDate>
+        <hasLearningCurve rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</hasLearningCurve>
+        <hasVersion>1.3.2</hasVersion>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Cloudera_CDH_V1.2.4 -->
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Cassandra_V2.7.9 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Cloudera_CDH_V1.2.4">
-        <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/CDH"/>
-        <untitled-ontology-36:hasPlatform rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/11/untitled-ontology-24#Nokia"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Cassandra_V2.7.9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Cassandra"/>
+        <hasCompatibleTo rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Cassandra_V1.3.2"/>
     </owl:NamedIndividual>
     
 
@@ -1620,15 +1640,6 @@ These servers are optimized for performance, availability, and data security and
     <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Flume_V0.3.2 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Flume_V0.3.2"/>
-    
-
-
-    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Google_Cloud_Platform -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Google_Cloud_Platform">
-        <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Big_Data_Service"/>
-        <untitled-ontology-36:hasPlatform rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/11/untitled-ontology-24#Intel"/>
-    </owl:NamedIndividual>
     
 
 
@@ -1684,11 +1695,10 @@ These servers are optimized for performance, availability, and data security and
     
 
 
-    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/IBM_Cloud -->
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/LicenseOpen -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/IBM_Cloud">
-        <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Big_Data_Service"/>
-        <untitled-ontology-36:hasPlatform rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/11/untitled-ontology-24#HP"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/LicenseOpen">
+        <rdf:type rdf:resource="http://cor.esipfed.org/ont/DLO_0000001"/>
     </owl:NamedIndividual>
     
 
@@ -1697,6 +1707,15 @@ These servers are optimized for performance, availability, and data security and
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Lisp">
         <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Logic_Language"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Microsoft_Azure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Microsoft_Azure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Big_Data_Service"/>
+        <untitled-ontology-36:hasPlatform rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/11/untitled-ontology-24#Microsoft"/>
     </owl:NamedIndividual>
     
 
