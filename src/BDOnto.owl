@@ -39,6 +39,8 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#directlyFollowedBy"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#General_Steps"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#General_Steps"/>
         <rdfs:comment xml:lang="en">This property establishes which step comes before.</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -49,6 +51,8 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#consistsOf">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#isConsistedOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#General_Steps"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Operation"/>
         <rdfs:comment xml:lang="en">Which operations take part in a step.</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -59,6 +63,8 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#directlyFollowedBy">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#General_Steps"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#General_Steps"/>
         <rdfs:comment xml:lang="en">Establish which steps comes after this step.</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -69,7 +75,6 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasCompatibleTo">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#isCompatibleWith"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain>
             <owl:Class>
@@ -103,21 +108,7 @@
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#isLicensedBy"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Big_Data_Tool"/>
-        <rdfs:range rdf:resource="http://purl.org/dc/terms/LicenseDocument"/>
         <rdfs:comment xml:lang="en">This property indicates the type of licence associated with that technology or instrument.</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasNextStep -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasNextStep">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#isNextStepOf"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#General_Steps"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#General_Steps"/>
-        <rdfs:comment xml:lang="en">Wheter a data science step (General step) has another step</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -136,7 +127,6 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#isCompatibleWith">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain>
             <owl:Class>
@@ -167,7 +157,9 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#isConsistedOf">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:comment xml:lang="en">This property links a more specific class to a more general class. For example, it connects a specific class as &quot;Data_Analysis&quot; to &quot;Data_Cleaning&quot; to indicate that it is an integral part of that general phase.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Operation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#General_Steps"/>
+        <rdfs:comment xml:lang="en">Inverse of &quot;consistsOf&quot;.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -177,20 +169,7 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#isLicensedBy">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://purl.org/dc/terms/LicenseDocument"/>
         <rdfs:comment xml:lang="en">Inverse of &apos;hasLicense&apos;.</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#isNextStepOf -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#isNextStepOf">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#General_Steps"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#General_Steps"/>
-        <rdfs:comment xml:lang="en">Inverse of &apos;hasNextStep&apos;.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -260,6 +239,31 @@
     
 
 
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/hasPlatform -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/hasPlatform">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/platformOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Big_Data_Technology"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/11/untitled-ontology-24#Company"/>
+        <rdfs:comment xml:lang="en">The company that controls a specific technology.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/platformOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/platformOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/11/untitled-ontology-24#Company"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Big_Data_Technology"/>
+        <rdfs:comment>Inverse of &apos;hasPlatform&apos;</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -286,7 +290,7 @@
                 </owl:withRestrictions>
             </rdfs:Datatype>
         </rdfs:range>
-        <rdfs:comment xml:lang="en">The average cost of this technology.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The average cost (in dollar) of this technology.</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -399,16 +403,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/hasPlatform -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/hasPlatform">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Big_Data_Service"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -441,6 +435,10 @@
                         <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Big_Data_Tool"/>
                     </owl:Restriction>
                     <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/hasPlatform"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/11/untitled-ontology-24#Company"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasDifficultyLevel"/>
                         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                         <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
@@ -457,11 +455,6 @@
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasVersion"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/hasPlatform"/>
                         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                         <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
                     </owl:Restriction>
@@ -523,6 +516,7 @@ These technologies encompass distributed computing platforms, data storage solut
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Big_Data_Technology"/>
         <rdfs:comment>A big data tool is a software or technology designed to efficiently process, store, and analyze large and complex datasets, often beyond the capabilities of traditional data processing tools.
 
 These tools enable organizations to extract valuable insights and patterns from massive volumes of data, typically with features for distributed computing, data integration, and scalability.</rdfs:comment>
@@ -553,6 +547,12 @@ These tools enable organizations to extract valuable insights and patterns from 
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasParticipant"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Hadoop"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasParticipant"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Spark"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Clustering involves grouping similar data points together based on their inherent characteristics, helping to uncover hidden patterns or structures in the data.</rdfs:comment>
@@ -684,7 +684,25 @@ It often involves the application of statistical, mathematical, and computationa
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasParticipant"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Cassandra"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasParticipant"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Flume"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasParticipant"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Kafka"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasParticipant"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/MongoDB"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Data collecting is the initial step of gathering relevant information from various sources, which may include databases, surveys, or sensors, to build a comprehensive dataset for analysis.</rdfs:comment>
@@ -714,6 +732,12 @@ It often involves the application of statistical, mathematical, and computationa
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasParticipant"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Hive"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasParticipant"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/MongoDB"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Data exploration entails visualizing and summarizing data to understand its characteristics, distributions, and relationships, aiding in identifying potential patterns or anomalies.</rdfs:comment>
@@ -802,6 +826,24 @@ It often involves the application of statistical, mathematical, and computationa
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasParticipant"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Hadoop"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasParticipant"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Kafka"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasParticipant"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/MongoDB"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasParticipant"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Spark"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Data integration involves combining data from various sources to create a unified dataset, enabling more comprehensive analysis and insights.</rdfs:comment>
@@ -909,6 +951,18 @@ It ensures that the data is of high quality and properly formatted, enabling mor
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasParticipant"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Hadoop"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasParticipant"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Flink"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasParticipant"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Spark"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Data processing includes transforming and manipulating data to prepare it for analysis, involving tasks like filtering, aggregation, and feature engineering.</rdfs:comment>
@@ -1041,6 +1095,12 @@ It typically involves a series of interconnected steps, from problem definition 
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasParticipant"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Hadoop"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasParticipant"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/MongoDB"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Data selection involves choosing the most relevant variables or features from a dataset to focus on, simplifying the analysis process.</rdfs:comment>
@@ -1233,6 +1293,12 @@ It involves creating charts, graphs, maps, and other visual elements to present 
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Hadoop"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasParticipant"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Spark"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>Modeling involves the development of predictive or descriptive models that leverage data to make informed decisions or forecasts.</rdfs:comment>
     </owl:Class>
     
@@ -1262,6 +1328,18 @@ It involves creating charts, graphs, maps, and other visual elements to present 
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasParticipant"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Hadoop"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasParticipant"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Spark"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#hasParticipant"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Tableau"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Plotting refers to the creation of visual representations, such as charts and graphs, to convey data trends, patterns, and relationships effectively.</rdfs:comment>
@@ -1333,6 +1411,9 @@ It involves creating charts, graphs, maps, and other visual elements to present 
 
     <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Big_Data_Hardware">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Big_Data_Technology"/>
+        <rdfs:comment>Big data hardware refers to the physical infrastructure designed to handle the immense data processing and storage demands of big data applications.
+
+This hardware is often optimized for high-performance computing and data-intensive workloads, enabling organizations to efficiently process, store, and manage large volumes of data.</rdfs:comment>
     </owl:Class>
     
 
@@ -1419,26 +1500,24 @@ It involves creating charts, graphs, maps, and other visual elements to present 
     
 
 
-    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Rackmount_Server -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Rackmount_Server">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Server_Commodity"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Server_Blade -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Server_Blade">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Server_Commodity"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Server_Commodity -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Server_Commodity">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Big_Data_Hardware"/>
+        <rdfs:comment>A commodity server is a standard, off-the-shelf server with no specialized or proprietary hardware components, making it cost-effective and easily replaceable.
+
+These servers are often used for general-purpose computing tasks and are readily available from various manufacturers, providing flexibility and affordability for organizations.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Server_Enterprise -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Server_Enterprise">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Big_Data_Hardware"/>
+        <rdfs:comment>An enterprise server is a high-end, powerful, and reliable computer system designed to meet the demanding requirements of large organizations and data centers, typically featuring redundancy, scalability, and advanced management features.
+
+These servers are optimized for performance, availability, and data security and are commonly used for critical business applications and services, such as databases, virtualization, and cloud computing.</rdfs:comment>
     </owl:Class>
     
 
@@ -1459,11 +1538,9 @@ It involves creating charts, graphs, maps, and other visual elements to present 
     
 
 
-    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Tower_Server -->
+    <!-- https://www.opendatacommons.org/licenses/pddl/1.0/ -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Tower_Server">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Server_Commodity"/>
-    </owl:Class>
+    <owl:Class rdf:about="https://www.opendatacommons.org/licenses/pddl/1.0/"/>
     
 
 
@@ -1513,11 +1590,11 @@ It involves creating charts, graphs, maps, and other visual elements to present 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Amazon_AWS">
         <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Big_Data_Technology"/>
         <supportsWith rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Hadoop_V2.2.0"/>
+        <untitled-ontology-36:hasPlatform rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/11/untitled-ontology-24#Intel"/>
         <hasDifficultyLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasDifficultyLevel>
         <hasEndOfSupportDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-27T14:30:00Z</hasEndOfSupportDate>
         <hasLearningCurve rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasLearningCurve>
         <hasVersion>1.3</hasVersion>
-        <untitled-ontology-36:hasPlatform>Confluent</untitled-ontology-36:hasPlatform>
     </owl:NamedIndividual>
     
 
@@ -1526,7 +1603,7 @@ It involves creating charts, graphs, maps, and other visual elements to present 
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Azure">
         <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Big_Data_Service"/>
-        <untitled-ontology-36:hasPlatform>Microsoft</untitled-ontology-36:hasPlatform>
+        <untitled-ontology-36:hasPlatform rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/11/untitled-ontology-24#Microsoft"/>
     </owl:NamedIndividual>
     
 
@@ -1535,7 +1612,7 @@ It involves creating charts, graphs, maps, and other visual elements to present 
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Cloudera_CDH_V1.2.4">
         <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/CDH"/>
-        <untitled-ontology-36:hasPlatform>Cloudera</untitled-ontology-36:hasPlatform>
+        <untitled-ontology-36:hasPlatform rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/11/untitled-ontology-24#Nokia"/>
     </owl:NamedIndividual>
     
 
@@ -1550,7 +1627,7 @@ It involves creating charts, graphs, maps, and other visual elements to present 
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Google_Cloud_Platform">
         <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Big_Data_Service"/>
-        <untitled-ontology-36:hasPlatform>Google</untitled-ontology-36:hasPlatform>
+        <untitled-ontology-36:hasPlatform rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/11/untitled-ontology-24#Intel"/>
     </owl:NamedIndividual>
     
 
@@ -1559,7 +1636,6 @@ It involves creating charts, graphs, maps, and other visual elements to present 
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Hadoop_V2.2.0">
         <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Hadoop"/>
-        <hasLicense rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/ODC_V1.0"/>
         <supportsWith rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Java"/>
         <hasAverageSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.4</hasAverageSize>
         <hasDifficultyLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</hasDifficultyLevel>
@@ -1574,7 +1650,6 @@ It involves creating charts, graphs, maps, and other visual elements to present 
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Hadoop_V2.2.2">
         <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Big_Data_Technology"/>
-        <hasLicense rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/ODC_V1.0"/>
         <supportsWith rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Java"/>
         <supportsWith rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Scala"/>
         <hasAverageSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.3</hasAverageSize>
@@ -1598,7 +1673,6 @@ It involves creating charts, graphs, maps, and other visual elements to present 
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Hive_V1.0.1">
         <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Hive"/>
-        <hasLicense rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/ODC_V1.0"/>
         <supportsWith rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Java"/>
         <supportsWith rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/SQL"/>
         <hasAverageSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">22.3</hasAverageSize>
@@ -1614,7 +1688,7 @@ It involves creating charts, graphs, maps, and other visual elements to present 
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/IBM_Cloud">
         <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Big_Data_Service"/>
-        <untitled-ontology-36:hasPlatform>IBM</untitled-ontology-36:hasPlatform>
+        <untitled-ontology-36:hasPlatform rdf:resource="http://www.semanticweb.org/admin/ontologies/2018/11/untitled-ontology-24#HP"/>
     </owl:NamedIndividual>
     
 
@@ -1623,14 +1697,6 @@ It involves creating charts, graphs, maps, and other visual elements to present 
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Lisp">
         <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Logic_Language"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/ODC_V1.0 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/ODC_V1.0">
-        <rdf:type rdf:resource="https://www.opendatacommons.org/licenses/pddl/1.0/"/>
     </owl:NamedIndividual>
     
 
@@ -1670,7 +1736,7 @@ It involves creating charts, graphs, maps, and other visual elements to present 
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/dc/terms/LicenseDocument"/>
+            <rdf:Description rdf:about="http://cor.esipfed.org/ont/DLO_0000001"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Big_Data_Technology"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Data_Science_Process"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Hardware"/>
@@ -1741,6 +1807,7 @@ It involves creating charts, graphs, maps, and other visual elements to present 
             <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36#Hive"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Cassandra"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Flink"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Flume"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Kafka"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/MongoDB"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Spark"/>
@@ -1752,27 +1819,8 @@ It involves creating charts, graphs, maps, and other visual elements to present 
         <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/AWS"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Azure"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Cloud_Base_Service"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/GCP"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/IBM_Cloud"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/On_Premises_Service"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/AWS"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Azure"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/GCP"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/IBM_Cloud"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Rackmount_Server"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Server_Blade"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36/Tower_Server"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
