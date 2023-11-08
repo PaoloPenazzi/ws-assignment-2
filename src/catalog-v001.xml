@@ -7,6 +7,6 @@
     <uri id="Imports Wizard Entry" name="http://cor.esipfed.org/ont/earthcube/dlo" uri="file:/C:/Users/angelo.parrinello/Downloads/dlo.ttl"/>
     <uri id="Imports Wizard Entry" name="http://rdf.webofcode.org/woc/" uri="file:/C:/Users/angelo.parrinello/Downloads/CodeOntology.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1698943112819" name="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36" uri="BDOnto.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1699439786239" name="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/untitled-ontology-36" uri="BDOnto.owl"/>
     </group>
 </catalog>
