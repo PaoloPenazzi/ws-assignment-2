@@ -412,6 +412,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#hasParadigm -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#hasParadigm">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Programming_Language"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#hasStartingDate -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#hasStartingDate">
@@ -501,7 +510,6 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Big_Data_Technology"/>
         <rdfs:comment>A big data service is a cloud-based or managed solution that offers the infrastructure, tools, and resources for organizations to store, process, and analyze large and complex datasets without the need to invest in and maintain their own data infrastructure.</rdfs:comment>
     </owl:Class>
     
@@ -556,7 +564,6 @@ These technologies encompass distributed computing platforms, data storage solut
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Big_Data_Technology"/>
         <rdfs:comment>A big data tool is a software or technology designed to efficiently process, store, and analyze large and complex datasets, often beyond the capabilities of traditional data processing tools.
 
 These tools enable organizations to extract valuable insights and patterns from massive volumes of data, typically with features for distributed computing, data integration, and scalability.</rdfs:comment>
@@ -608,6 +615,10 @@ These tools enable organizations to extract valuable insights and patterns from 
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#General_Steps"/>
                     <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#directlyFollowedBy"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Data_Visualization"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#consistsOf"/>
                         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                         <owl:onClass rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Classification"/>
@@ -640,55 +651,6 @@ These tools enable organizations to extract valuable insights and patterns from 
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#General_Steps"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#directlyFollowedBy"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Data_Visualization"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#consistsOf"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Classification"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#consistsOf"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Data_Cleaning"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#consistsOf"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Data_Governance"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#consistsOf"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Data_Processing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#consistsOf"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Evaluation"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#consistsOf"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Regression"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>Data analysis is the process of examining, cleaning, transforming, and interpreting data to discover patterns, draw conclusions, and make informed decisions based on the information contained in the data.
 
 It often involves the application of statistical, mathematical, and computational techniques to uncover insights and derive actionable knowledge from datasets.</rdfs:comment>
@@ -871,6 +833,10 @@ It often involves the application of statistical, mathematical, and computationa
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#General_Steps"/>
                     <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#directlyFollowedBy"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Data_Analysis"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#consistsOf"/>
                         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                         <owl:onClass rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Clustering"/>
@@ -898,48 +864,6 @@ It often involves the application of statistical, mathematical, and computationa
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#General_Steps"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#directlyFollowedBy"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Data_Analysis"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#consistsOf"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Clustering"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#consistsOf"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Data_Exploration"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#consistsOf"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Data_Formatting"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#consistsOf"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Data_Governance"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#consistsOf"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Data_Quality_Verification"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>Data preparation, in the context of data science, is the crucial process of cleaning and organizing raw data to make it suitable for analysis, which includes tasks like handling missing values, removing inconsistencies, and transforming data into a structured format.
 
 It ensures that the data is of high quality and properly formatted, enabling more accurate and meaningful insights to be derived from it.</rdfs:comment>
@@ -990,6 +914,10 @@ It ensures that the data is of high quality and properly formatted, enabling mor
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#General_Steps"/>
                     <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#directlyFollowedBy"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Data_Preparation"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#consistsOf"/>
                         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                         <owl:onClass rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Data_Collecting"/>
@@ -1017,48 +945,6 @@ It ensures that the data is of high quality and properly formatted, enabling mor
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#General_Steps"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#directlyFollowedBy"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Data_Preparation"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#consistsOf"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Data_Collecting"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#consistsOf"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Data_Gathering"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#consistsOf"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Data_Governance"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#consistsOf"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Data_Integration"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#consistsOf"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Data_Selection"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>Data provision refers to the process of making data available, typically within an organization, to enable its access and use by relevant parties for analysis, reporting, or decision-making.
 
 This involves data storage, retrieval, and delivery mechanisms to ensure that data is accessible, secure, and up-to-date for users who require it in their various roles and functions.</rdfs:comment>
@@ -1129,68 +1015,27 @@ It typically involves a series of interconnected steps, from problem definition 
                     <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#General_Steps"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#consistsOf"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                        <owl:onClass rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Data_Governance"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Data_Governance"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#consistsOf"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                        <owl:onClass rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Deployment"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Deployment"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#consistsOf"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                        <owl:onClass rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Modelling"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Modelling"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#consistsOf"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                        <owl:onClass rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Plotting"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Plotting"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#consistsOf"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                        <owl:onClass rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Reporting"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Reporting"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#General_Steps"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#consistsOf"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Data_Governance"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#consistsOf"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Deployment"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#consistsOf"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Modelling"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#consistsOf"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Plotting"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#consistsOf"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Reporting"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>Data visualization is the graphical representation of data to convey information and insights, making complex data more understandable and interpretable.
 
 It involves creating charts, graphs, maps, and other visual elements to present data in a way that facilitates analysis and communication.</rdfs:comment>
@@ -1205,10 +1050,24 @@ It involves creating charts, graphs, maps, and other visual elements to present 
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#hasParticipant"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Docker"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#hasParticipant"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Hadoop"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Deployment is the implementation of data-driven models or solutions in real-world applications, where they can make predictions or recommendations based on new data.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Docker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Docker">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Big_Data_Tool"/>
     </owl:Class>
     
 
@@ -1253,6 +1112,14 @@ It involves creating charts, graphs, maps, and other visual elements to present 
     
 
 
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Grafana -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Grafana">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Big_Data_Tool"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Hadoop -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Hadoop">
@@ -1273,10 +1140,34 @@ It involves creating charts, graphs, maps, and other visual elements to present 
     
 
 
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Haskell -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Haskell">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Functional_Language"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Hive -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Hive">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Big_Data_Tool"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Java -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Java">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Object_Oriented_Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Lisp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Lisp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Logic_Language"/>
     </owl:Class>
     
 
@@ -1333,6 +1224,12 @@ It involves creating charts, graphs, maps, and other visual elements to present 
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#hasParticipant"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Grafana"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#hasParticipant"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Hadoop"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1356,7 +1253,26 @@ It involves creating charts, graphs, maps, and other visual elements to present 
     <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Programming_Language -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Programming_Language">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Big_Data_Technology"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Big_Data_Technology"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#hasParadigm"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Prolog -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Prolog">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Logic_Language"/>
     </owl:Class>
     
 
@@ -1391,10 +1307,34 @@ It involves creating charts, graphs, maps, and other visual elements to present 
     
 
 
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#SQL -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#SQL">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Domain_Specific_Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Scala -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Scala">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Functional_Language"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Stream_Processing -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Stream_Processing">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Data_Processing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#C++ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#C++">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Object_Oriented_Language"/>
     </owl:Class>
     
 
@@ -1552,10 +1492,214 @@ These servers are often used for specific-purpose computing tasks.</rdfs:comment
     
 
 
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Cassandra_V4.3.1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Cassandra_V4.3.1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto/Cassandra"/>
+        <hasVersion>4.3.1</hasVersion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Data_Governance_Microsoft -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Data_Governance_Microsoft">
+        <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Data_Governance"/>
+        <hasParticipant rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto/Hadoop_V2.2.2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Data_Governance_V1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Data_Governance_V1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Data_Governance"/>
+        <hasParticipant rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto/Hadoop_V2.2.2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Data_Visualization_Microsoft -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Data_Visualization_Microsoft">
+        <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Data_Visualization"/>
+        <consistsOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Data_Governance_Microsoft"/>
+        <consistsOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Deployment_Microsoft"/>
+        <consistsOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Modelling_Microsoft"/>
+        <consistsOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Plotting_Microsoft"/>
+        <consistsOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Reporting_Microsoft"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Data_Visualization_V1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Data_Visualization_V1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#General_Steps"/>
+        <consistsOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Data_Governance_V1"/>
+        <consistsOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Deployment_V1"/>
+        <consistsOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Modelling_V1"/>
+        <consistsOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Plotting_V1"/>
+        <consistsOf rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Reporting_V1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Deployment_Microsoft -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Deployment_Microsoft">
+        <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Deployment"/>
+        <hasParticipant rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Docker_V0.4.3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Deployment_V1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Deployment_V1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Deployment"/>
+        <hasParticipant rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Docker_V0.4.3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Docker_V0.4.3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Docker_V0.4.3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Docker"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Grafana_V.1.4.5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Grafana_V.1.4.5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Grafana"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Java -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Java">
-        <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Object_Oriented_Language"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Java"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Modelling_Microsoft -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Modelling_Microsoft">
+        <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Modelling"/>
+        <hasParticipant rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Spark_V2.3.0"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Modelling_V1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Modelling_V1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Modelling"/>
+        <hasParticipant rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Spark_V2.3.0"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Plotting_Microsoft -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Plotting_Microsoft">
+        <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Plotting"/>
+        <hasParticipant rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Grafana_V.1.4.5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Plotting_V1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Plotting_V1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Plotting"/>
+        <hasParticipant rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Tableau_V3.0.0"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Reporting_Microsoft -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Reporting_Microsoft">
+        <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Reporting"/>
+        <hasParticipant rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto/Hadoop_V2.2.0"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Reporting_V1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Reporting_V1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Reporting"/>
+        <hasParticipant rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto/Hadoop_V2.2.2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Server_Large_AWS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Server_Large_AWS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto/Server_Enterprise"/>
+        <untitled-ontology-24:cpuSpeedUnit>GHz</untitled-ontology-24:cpuSpeedUnit>
+        <untitled-ontology-24:cpuSpeedValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.2</untitled-ontology-24:cpuSpeedValue>
+        <untitled-ontology-24:deviceRAMUnit>GB</untitled-ontology-24:deviceRAMUnit>
+        <untitled-ontology-24:deviceRAMValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</untitled-ontology-24:deviceRAMValue>
+        <untitled-ontology-24:deviceStorageUnit>GB</untitled-ontology-24:deviceStorageUnit>
+        <untitled-ontology-24:deviceStorageValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1250</untitled-ontology-24:deviceStorageValue>
+        <untitled-ontology-24:gpuMemorySize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</untitled-ontology-24:gpuMemorySize>
+        <untitled-ontology-24:gpuMemoryUnit>GB</untitled-ontology-24:gpuMemoryUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Server_Medium_AWS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Server_Medium_AWS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto/Server_Enterprise"/>
+        <untitled-ontology-24:cpuSpeedUnit>GHz</untitled-ontology-24:cpuSpeedUnit>
+        <untitled-ontology-24:cpuSpeedValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.2</untitled-ontology-24:cpuSpeedValue>
+        <untitled-ontology-24:deviceRAMUnit>GB</untitled-ontology-24:deviceRAMUnit>
+        <untitled-ontology-24:deviceRAMValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16</untitled-ontology-24:deviceRAMValue>
+        <untitled-ontology-24:deviceStorageUnit>GB</untitled-ontology-24:deviceStorageUnit>
+        <untitled-ontology-24:deviceStorageValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</untitled-ontology-24:deviceStorageValue>
+        <untitled-ontology-24:gpuMemorySize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</untitled-ontology-24:gpuMemorySize>
+        <untitled-ontology-24:gpuMemoryUnit>GB</untitled-ontology-24:gpuMemoryUnit>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Server_Small_AWS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Server_Small_AWS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto/Server"/>
+        <untitled-ontology-24:cpuSpeedUnit>GHz</untitled-ontology-24:cpuSpeedUnit>
+        <untitled-ontology-24:cpuSpeedValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.1</untitled-ontology-24:cpuSpeedValue>
+        <untitled-ontology-24:deviceRAMUnit>GB</untitled-ontology-24:deviceRAMUnit>
+        <untitled-ontology-24:deviceRAMValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</untitled-ontology-24:deviceRAMValue>
+        <untitled-ontology-24:deviceStorageUnit>GB</untitled-ontology-24:deviceStorageUnit>
+        <untitled-ontology-24:deviceStorageValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">501</untitled-ontology-24:deviceStorageValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Spark_V2.3.0 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Spark_V2.3.0">
+        <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto/Spark"/>
+        <hasFullName>Apache Spark V2.3.0</hasFullName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Tableau_V3.0.0 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Tableau_V3.0.0">
+        <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto/Tableau"/>
     </owl:NamedIndividual>
     
 
@@ -1577,7 +1721,7 @@ These servers are often used for specific-purpose computing tasks.</rdfs:comment
     <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#C++ -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#C++">
-        <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Object_Oriented_Language"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#C++"/>
     </owl:NamedIndividual>
     
 
@@ -1594,7 +1738,10 @@ These servers are often used for specific-purpose computing tasks.</rdfs:comment
     <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto/Amazon_AWS -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto/Amazon_AWS">
-        <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Big_Data_Technology"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto/AWS"/>
+        <supportsWith rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Server_Large_AWS"/>
+        <supportsWith rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Server_Medium_AWS"/>
+        <supportsWith rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Server_Small_AWS"/>
         <supportsWith rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto/Hadoop_V2.2.2"/>
         <BDOnto1:hasPlatform rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto/Amazon"/>
         <hasAverageCost rdf:datatype="http://www.w3.org/2001/XMLSchema#float">43.7</hasAverageCost>
@@ -1622,9 +1769,10 @@ These servers are often used for specific-purpose computing tasks.</rdfs:comment
         <supportsWith rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto/SQL"/>
         <hasAverageSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.6</hasAverageSize>
         <hasDifficultyLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</hasDifficultyLevel>
-        <hasEndOfSupportDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-10-24T14:00:00Z</hasEndOfSupportDate>
+        <hasEndOfSupportDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-10-24T14:00:00Z</hasEndOfSupportDate>
         <hasFullName>Apache Cassandra V1.3.2</hasFullName>
         <hasLearningCurve rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</hasLearningCurve>
+        <hasStartingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-11-27T14:30:00</hasStartingDate>
     </owl:NamedIndividual>
     
 
@@ -1696,6 +1844,7 @@ These servers are often used for specific-purpose computing tasks.</rdfs:comment
         <hasEndOfSupportDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-10-24T14:00:00Z</hasEndOfSupportDate>
         <hasFullName>Apache Hadoop V 2.2</hasFullName>
         <hasLearningCurve rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</hasLearningCurve>
+        <hasStartingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-27T14:30:00</hasStartingDate>
     </owl:NamedIndividual>
     
 
@@ -1703,7 +1852,7 @@ These servers are often used for specific-purpose computing tasks.</rdfs:comment
     <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto/Hadoop_V2.2.2 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto/Hadoop_V2.2.2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Big_Data_Technology"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Hadoop"/>
         <supportsWith rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Java"/>
         <supportsWith rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto/Scala"/>
         <hasAverageSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.3</hasAverageSize>
@@ -1719,7 +1868,7 @@ These servers are often used for specific-purpose computing tasks.</rdfs:comment
     <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto/Haskell -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto/Haskell">
-        <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Functional_Language"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Haskell"/>
     </owl:NamedIndividual>
     
 
@@ -1750,7 +1899,7 @@ These servers are often used for specific-purpose computing tasks.</rdfs:comment
     <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto/Lisp -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto/Lisp">
-        <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Logic_Language"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Lisp"/>
     </owl:NamedIndividual>
     
 
@@ -1767,7 +1916,7 @@ These servers are often used for specific-purpose computing tasks.</rdfs:comment
     <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto/Prolog -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto/Prolog">
-        <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Logic_Language"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Prolog"/>
     </owl:NamedIndividual>
     
 
@@ -1775,7 +1924,7 @@ These servers are often used for specific-purpose computing tasks.</rdfs:comment
     <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto/SQL -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto/SQL">
-        <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Domain_Specific_Language"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#SQL"/>
     </owl:NamedIndividual>
     
 
@@ -1783,7 +1932,7 @@ These servers are often used for specific-purpose computing tasks.</rdfs:comment
     <!-- http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto/Scala -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto/Scala">
-        <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Functional_Language"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/angelo.parrinello/ontologies/2023/9/BDOnto#Scala"/>
     </owl:NamedIndividual>
     
 
