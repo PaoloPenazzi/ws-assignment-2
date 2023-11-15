@@ -1,4 +1,65 @@
+<<<<<<< HEAD
 ## [3.0.16](https://github.com/19eddie/SemanticWeb-Assignment02-03/compare/3.0.15...3.0.16) (2023-07-28)
+=======
+## [1.7.0](https://github.com/PaoloPenazzi/ws-assignment-2/compare/1.6.0...1.7.0) (2023-11-13)
+
+
+### Features
+
+* update onto ([7eb7105](https://github.com/PaoloPenazzi/ws-assignment-2/commit/7eb7105dacb2dcf80a6e60170751ac38e108117b))
+
+## [1.6.0](https://github.com/PaoloPenazzi/ws-assignment-2/compare/1.5.0...1.6.0) (2023-11-08)
+
+
+### Features
+
+* update onto ([856c02d](https://github.com/PaoloPenazzi/ws-assignment-2/commit/856c02d66b3581878819835869166babf4d33ad6))
+
+## [1.5.0](https://github.com/PaoloPenazzi/ws-assignment-2/compare/1.4.0...1.5.0) (2023-11-05)
+
+
+### Features
+
+* update onto ([2559465](https://github.com/PaoloPenazzi/ws-assignment-2/commit/2559465a1dc41f0be6e418986c7d11cf68257990))
+* update onto ([556f26e](https://github.com/PaoloPenazzi/ws-assignment-2/commit/556f26e94ebdc43858e0294bcdb4c91579b510dd))
+
+## [1.4.0](https://github.com/PaoloPenazzi/ws-assignment-2/compare/1.3.0...1.4.0) (2023-10-26)
+
+
+### Features
+
+* update onto ([bd05060](https://github.com/PaoloPenazzi/ws-assignment-2/commit/bd050609a67ca73f64b6335314b2515583a37177))
+* update onto ([4828a42](https://github.com/PaoloPenazzi/ws-assignment-2/commit/4828a42d4aed8111639888902bcee2fb7c9ddee6))
+
+## [1.3.0](https://github.com/PaoloPenazzi/ws-assignment-2/compare/1.2.0...1.3.0) (2023-10-24)
+
+
+### Features
+
+* update onto ([33f3fbb](https://github.com/PaoloPenazzi/ws-assignment-2/commit/33f3fbb1e5ef3297fcc3225e03fa0bbac973b16f))
+* update onto ([e469bb8](https://github.com/PaoloPenazzi/ws-assignment-2/commit/e469bb88dcd70b5ca459e7c2a7aafc777f57da96))
+
+## [1.2.0](https://github.com/PaoloPenazzi/WS-assignment-2/compare/1.1.0...1.2.0) (2023-08-09)
+
+
+### Features
+
+* add relationship between classes ([9bcd2db](https://github.com/PaoloPenazzi/WS-assignment-2/commit/9bcd2db698cfc91ce9f259dd12c90ef702feb06f))
+
+## [1.1.0](https://github.com/PaoloPenazzi/WS-assignment-2/compare/1.0.0...1.1.0) (2023-08-09)
+
+
+### Features
+
+* add BDTOnto Taxonomy ([28785e3](https://github.com/PaoloPenazzi/WS-assignment-2/commit/28785e399dcc83a456b22915655698673e6b9907))
+
+## 1.0.0 (2023-08-07)
+
+
+### Features
+
+* add front page ([02121c3](https://github.com/PaoloPenazzi/WS-assignment-2/commit/02121c3497ca64779715efee681d47b8b32f7025))
+>>>>>>> 51ec09f064e348dd4416d83e68ea860a7c650339
 
 
 ### Documentation
