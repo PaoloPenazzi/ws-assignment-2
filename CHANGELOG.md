@@ -1,3 +1,17 @@
+## [1.7.1](https://github.com/PaoloPenazzi/ws-assignment-2/compare/1.7.0...1.7.1) (2023-11-23)
+
+
+### Documentation
+
+* add results ([57c4328](https://github.com/PaoloPenazzi/ws-assignment-2/commit/57c4328ca4d2605802b7c38ae8d202528abf1914))
+* add results ([654e07c](https://github.com/PaoloPenazzi/ws-assignment-2/commit/654e07ce9045e503e90b933bb67e11543c5f8b69))
+* add results ([5f7f996](https://github.com/PaoloPenazzi/ws-assignment-2/commit/5f7f996880d07e58a1bac195ea258d4ebc84cda8))
+
+
+### General maintenance
+
+* update release branch ([352ce96](https://github.com/PaoloPenazzi/ws-assignment-2/commit/352ce96906f9d884ff951b777e35a9f352b3191c))
+
 <<<<<<< HEAD
 ## [3.0.16](https://github.com/19eddie/SemanticWeb-Assignment02-03/compare/3.0.15...3.0.16) (2023-07-28)
 =======
