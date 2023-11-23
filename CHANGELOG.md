@@ -1,3 +1,17 @@
+## [2.1.0](https://github.com/PaoloPenazzi/ws-assignment-2/compare/2.0.0...2.1.0) (2023-11-23)
+
+
+### Features
+
+* change token name in ci ([ad0ab08](https://github.com/PaoloPenazzi/ws-assignment-2/commit/ad0ab082fc3be34fed601e10cd03581970a795d4))
+* revert gh token name ([7b99414](https://github.com/PaoloPenazzi/ws-assignment-2/commit/7b994146ec33298bfc37e0ea6688285214d7118c))
+* update ci ([259266a](https://github.com/PaoloPenazzi/ws-assignment-2/commit/259266a09145f3a1f24931f583b85ea98a99fea7))
+
+
+### Build and continuous integration
+
+* update release pdf path ([8b838f0](https://github.com/PaoloPenazzi/ws-assignment-2/commit/8b838f03fd648dce1cad68da28da2cb6142c1014))
+
 ## [2.0.0](https://github.com/PaoloPenazzi/ws-assignment-2/compare/1.7.1...2.0.0) (2023-11-23)
 
 
