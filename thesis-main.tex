@@ -1,23 +1,51 @@
-\documentclass[12pt,a4paper,openright,oneside]{book}
+\documentclass[12pt,a4paper,openright]{report}
+\usepackage[italian]{babel}
 \usepackage[utf8]{inputenc}
-
+\usepackage{hyperref}
+\usepackage{url}
+%\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{makeidx}
+\usepackage{listings}
+\usepackage[square,numbers,sort]{natbib}
+\usepackage{tabularx}
+\usepackage{float}
 \newcommand{\thesislang}{italian} % decommentare in caso di tesi in italiano
-% \newcommand{\thesislang}{english} % commentare in caso di tesi in italiano
+%\newcommand{\thesislang}{english} % commentare in caso di tesi in italiano
 \usepackage{thesis-style}
 
+% version
+\newcommand{\versionmajor}{0}
+\newcommand{\versionminor}{1}
+\newcommand{\versionpatch}{2}
+\newcommand{\version}{\versionmajor.\versionminor.\versionpatch}
+\typeout{Document version: \version}
+
+\title{\LARGE
+    BDOnto: una Ontologia nel contesto dei Big Data e la Data Science  \\ \small Web Semantico
+}
+
+\author{
+    Penazzi Paolo \\ \small paolo.penazzi@studio.unibo.it
+    \and
+    Parrinello Angelo \\ \small angelo.parrinello@studio.unibo.it
+}
+
+\date{\small Anno Accademico 2022-2023}
+\makeindex
+
 \begin{document}
+\maketitle
 
-\input{front.tex}
+\tableofcontents
 
-\tableofcontents  
+\input{docs/sections/sec01.tex}
+\input{docs/sections/sec02.tex}
+\input{docs/sections/sec03.tex}
+\input{docs/sections/sec04.tex}
+\input{docs/sections/sec05.tex}
 
-%----------------------------------------------------------------------------------------
-% BIBLIOGRAPHY
-%----------------------------------------------------------------------------------------
-
-%\nocite{*} % uncomment this to show all the reference in the .bib file
 \bibliographystyle{plain}
 \bibliography{bibliography}
-
 
 \end{document}
