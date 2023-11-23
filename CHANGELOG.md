@@ -1,3 +1,19 @@
+## [2.0.0](https://github.com/PaoloPenazzi/ws-assignment-2/compare/1.7.1...2.0.0) (2023-11-23)
+
+
+### ⚠ BREAKING CHANGES
+
+* polish repo
+
+### Features
+
+* polish repo ([035d159](https://github.com/PaoloPenazzi/ws-assignment-2/commit/035d159ccdc34f031bc1eb64a509ddb3dbdd1bfb))
+
+
+### Build and continuous integration
+
+* update report root file path ([fe6bc1d](https://github.com/PaoloPenazzi/ws-assignment-2/commit/fe6bc1d6007419d9451f11e4f50f2467b1f8fb8e))
+
 ## [1.7.1](https://github.com/PaoloPenazzi/ws-assignment-2/compare/1.7.0...1.7.1) (2023-11-23)
 
 
